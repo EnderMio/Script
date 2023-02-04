@@ -41,7 +41,7 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`用量：${bytesToSize(used)} / ${bytesToSize(total)}\n`];
+  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
@@ -56,7 +56,7 @@ let args = getArgs();
 
   $done({
     title: `${args.title} | ${hour}:${minutes}`,
-    content: content.join(""),
+    content: content.join("\n"),
     icon: args.icon || "airplane.circle",
     "icon-color": args.color || "#007aff",
   });
