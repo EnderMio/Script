@@ -41,11 +41,11 @@ let args = getArgs();
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}\n`];
 
   if (expire && expire !== "false") {
     if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    content.push(`\n${formatTime(expire)}`);
+    content.push(`${formatTime(expire)}`);
   }
 
   let now = new Date();
