@@ -3,4 +3,4 @@
 
 [General]
 dns-server = 1.1.1.2,1.0.0.2
-encrypted-dns-server = https://security.cloudflare-dns.com/dns-quer
+encrypted-dns-server = https://security.cloudflare-dns.com/dns-query
