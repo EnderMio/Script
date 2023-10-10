@@ -1,0 +1,6 @@
+#!name = Cloudflare-DoH
+#!desc = 使用CloudflareDNS-over-HTTPS (DoH)
+
+[General]
+dns-server = 1.1.1.1, 1.0.0.1
+encrypted-dns-server = https://cloudflare-dns.com/dns-query
