@@ -2,7 +2,5 @@
 #!desc = 使用CloudflareDNS-over-HTTPS (DoH)
 
 [General]
-dns-server = 1.1.1.2,1.0.0.2,2606:4700:4700::1112,2606:4700:4700::1002
-encrypted-dns-server = https://security.cloudflare-dns.com/dns-query
-ipv6 = true
-ipv6-vif = auto
+dns-server = 1.1.1.2,1.0.0.2
+encrypted-dns-server = https://security.cloudflare-dns.com/dns-quer
