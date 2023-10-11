@@ -1,0 +1,9 @@
+#!name = DNS自动设置
+#!desc = 根据校园网环境自动切换DNS
+
+[General]
+encrypted-dns-server = ""
+
+[SSID Setting]
+SSID: BUPT-mobile dns-server=10.3.9.4
+SSID: * dns-server = ""
